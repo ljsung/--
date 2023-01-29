@@ -84,6 +84,12 @@ SELECT
     FROM TB_STUDENT
     WHERE DEPARTMENT_NO = 002 ORDER BY 3;
     
+--4. 교수들의 이름 중 성을 제외한 이름만 출력하는 SQL 문장을 작성하시오. 출력 헤더는
+--?이름? 이 찍히도록 핚다. (성이 2 자인 경우는 교수는 없다고 가정하시오)
+
+SELECT
+        SUBSTR(PROFESSOR_NAME, 2) 이름 
+    FROM TB_PROFESSOR;
 
    
     
