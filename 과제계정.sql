@@ -47,6 +47,12 @@ SELECT  *
   FROM  TB_STUDENT
   WHERE DEPARTMENT_NO IS NULL;
   
+--8. 수강신청을 하려고 핚다. 선수과목 여부를 확인해야 하는데, 선수과목이 존재하는
+--과목들은 어떤 과목인지 과목번호를 조회해보시오.
 
+SELECT 
+      CLASS_NO
+  FROM TB_CLASS
+  WHERE PREATTENDING_CLASS_NO IS NOT NULL;
         
   
