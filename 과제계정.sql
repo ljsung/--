@@ -39,3 +39,14 @@ SELECT
         PROFESSOR_NAME
   FROM  TB_PROFESSOR
   WHERE DEPARTMENT_NO IS NULL;
+  
+--  7. 혹시 전산상의 착오로 학과가 지정되어 있지 않은 학생이 있는지 확인하고자 핚다. 
+--어떠핚 SQL 문장을 사용하면 될 것인지 작성하시오
+
+SELECT  *
+  FROM  TB_STUDENT
+  WHERE DEPARTMENT_NO IS NULL;
+  
+
+        
+  
