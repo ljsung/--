@@ -16,7 +16,12 @@ from  TB_DEPARTMENT;
 --들어왔다. 누구인가? (국문학과의 '학과코드'는 학과 테이블(TB_DEPARTMENT)을 조회해서
 --찾아 내도록 하자)
 
+--4. 도서관에서 대출 도서 장기 연체자 들을 찾아 이름을 게시하고자 핚다. 그 대상자들의
+--학번이 다음과 같을 때 대상자들을 찾는 적젃핚 SQL 구문을 작성하시오.
+--A513079, A513090, A513091, A513110, A513119
+
 SELECT
-        TB_STUDENT
-      , TB_DEPARTMENT
-   FROM 
+        STUDENT_NAME
+FROM    TB_STUDENT
+WHERE   STUDENT_NO IN('A513079','A513090','A513091','A513110','A513119')
+ORDER BY 1 DESC;
